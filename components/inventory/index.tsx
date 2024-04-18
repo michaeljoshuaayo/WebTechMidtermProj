@@ -11,7 +11,14 @@ import { UsersIcon } from "@/components/icons/breadcrumb/users-icon";
 import { SettingsIcon } from "@/components/icons/sidebar/settings-icon";
 import { TableWrapper } from "@/components/table/table";
 import { AddBlood } from "./add-blood";
-
+import { BloodAPositive } from "./card-blood-A+";
+import { BloodANegative } from "./card-blood-A-";
+import { BloodABPositive } from "./card-blood-AB+";
+import { BloodABNegative } from "./card-blood-AB-";
+import { BloodBPositive } from "./card-blood-B+";
+import { BloodBNegative } from "./card-blood-B-";
+import { BloodOPositive } from "./card-blood-O+";
+import { BloodONegative } from "./card-blood-O-";
 export const Bloods = () => {
   return (
     <div className="my-14 lg:px-6 max-w-[95rem] mx-auto w-full flex flex-col gap-4">
@@ -30,7 +37,20 @@ export const Bloods = () => {
           <span> </span>{" "}
         </li>
       </ul>
+      <div className="flex flex-col gap-2">
+          <h3 className="text-xl font-semibold"> Blood Inventory Summary</h3>
+          <div className="grid md:grid-cols-2 grid-cols-1 xl:grid-cols-4 gap-5 justify-center w-full">
+            <BloodAPositive />
+            <BloodBPositive />
+            <BloodABPositive />
+            <BloodOPositive />
+            <BloodANegative />
+            <BloodBNegative />
+            <BloodABNegative />
+            <BloodONegative />
 
+          </div>
+        </div>
       <h3 className="text-xl font-semibold">Blood Inventory</h3>
       <div className="flex justify-between flex-wrap gap-4 items-center">
         <div className="flex items-center gap-3 flex-wrap md:flex-nowrap">

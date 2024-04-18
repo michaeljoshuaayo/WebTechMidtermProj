@@ -32,7 +32,7 @@ export const UserDropdown = () => {
           className="flex flex-col justify-start w-full items-start"
         >
           <p>Signed in as</p>
-          <p>zoey@example.com</p>
+          <p>michaeljoshuaayo@example.com</p>
         </DropdownItem>
         <DropdownItem key="settings">My Settings</DropdownItem>
         <DropdownItem key="team_settings">Team Settings</DropdownItem>
@@ -44,7 +44,7 @@ export const UserDropdown = () => {
           Log Out
         </DropdownItem>
         <DropdownItem key="switch">
-          <DarkModeSwitch />
+        <DarkModeSwitch />
         </DropdownItem>
       </DropdownMenu>
     </Dropdown>
